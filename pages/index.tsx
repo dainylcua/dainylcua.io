@@ -9,6 +9,7 @@ import Skills from "../components/sections/Skills"
 import Contact from "../components/sections/Contact"
 import Loading from "../components/Loading"
 import { useEffect, useState } from "react"
+import Nav from "../components/Nav"
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true)
@@ -30,16 +31,17 @@ const Home: NextPage = () => {
           :
           <></>
       }
-        <Hero />
-        <Posts />
-        <div>
-          Scroll down to learn more about me!
-        </div>
-        <AboutMe />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
+      <Nav/>
+      <Hero />
+      <Posts />
+      <div>
+        Scroll down to learn more about me!
+      </div>
+      <AboutMe />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
     </main>
   )
 }
