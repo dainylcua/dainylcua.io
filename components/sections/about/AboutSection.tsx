@@ -1,4 +1,4 @@
-import GRHeader from "./GridRowHeader"
+import GRHeader from "../../GridRowHeader"
 import { ReactNode } from "react"
 
 type Props = {

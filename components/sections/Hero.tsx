@@ -13,7 +13,7 @@ export default function Hero({}) {
       </>
 
       <div className="w-full mx-auto text-center relative flex flex-col items-center">
-        <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] md:text-7xl text-6xl bg-clip-text bg-gradient-to-r from-orange-700 to-rose-500">
+        <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] md:text-7xl text-6xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500">
           DAINYL CUA
         </h1>
         <h2 className="font-semibold text-stone-200 lg:text-4xl md:text-2xl pb-8">

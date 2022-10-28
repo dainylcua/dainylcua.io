@@ -11,12 +11,12 @@ export default function Nav() {
   return(
     <nav className="h-fit bg-stone-900 w-full mx-auto shadow-nav shadow-orange-900/5">
       {/* Desktop Menu */}
-      <div className="hidden md:flex items-center justify-between py-4 px-8 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-rose-500">
+      <div className="hidden md:flex items-center justify-between py-6 px-10 text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-rose-500">
         <div className="w-7/12">
           <NavLink href="/" main>dainylcua.io</NavLink>
         </div>
         {/* Links */}
-        <div className="flex justify-between w-5/12 px-8">
+        <div className="flex justify-between w-4/12 px-8">
           <NavLink href="#about">
             about
           </NavLink>
@@ -32,21 +32,6 @@ export default function Nav() {
           <NavLink href="#contact">
             contact
           </NavLink>
-          {/* <Link href="/" passHref>
-            <NavLink name="Home"/>
-          </Link>
-          <Link href="/blogposts" passHref>
-            <NavLink name="Blogposts"/>
-          </Link>
-          <Link href="/goals" passHref>
-            <NavLink name="Goals"/>
-          </Link>
-          <Link href="/pomodoro" passHref>
-            <NavLink name="Pomodoro"/>
-          </Link>
-          <Link href="/info" passHref>
-            <NavLink name="Info"/>
-          </Link> */}
         </div>
       </div>
 
@@ -86,7 +71,7 @@ export default function Nav() {
       </div>
 
       {/* Border */}
-      <div className="bg-gradient-to-r from-orange-700 to-rose-500 h-[1.5px] rounded-full w-full mx-auto" />
+      <div className="bg-gradient-to-r from-orange-500 to-rose-500 h-[1.5px] rounded-full w-full mx-auto" />
     </nav>
   )
 }
