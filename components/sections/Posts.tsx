@@ -1,5 +1,5 @@
-import Header2 from "./Header2"
-import LayoutContainer from "./LayoutContainer"
+import Header2 from "../Header2"
+import LayoutContainer from "../LayoutContainer"
 
 export default function Posts() {
   return(

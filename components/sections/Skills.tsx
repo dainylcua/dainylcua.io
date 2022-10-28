@@ -1,4 +1,4 @@
-import LayoutContainer from "./LayoutContainer"
+import LayoutContainer from "../LayoutContainer"
 
 export default function Skills() {
   return(
