@@ -48,7 +48,7 @@ module.exports = {
         },
         movedown: {
           '0%': { transform: "translateY(0vh)", height: "100vh" },
-          '95%': { transform: "translateY(0vh)", height: "100vh" },
+          '90%': { transform: "translateY(0vh)", height: "100vh" },
           '100%': { transform: "translateY(100vh)", height: "0vh" },
         }
       }
