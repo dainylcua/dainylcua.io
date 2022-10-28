@@ -9,8 +9,8 @@ type Props = {
 export default function LayoutContainer(props: Props) {
   const {children, color} = props
   return(
-    <div className={`w-full ${color ? color : "bg-stone-900"} px-8`}>
-      <div className="max-w-2xl mx-auto">
+    <div className={`w-full ${color ? color : "bg-stone-900"} py-8 px-8`}>
+      <div className="max-w-5xl mx-auto">
         {children}
       </div>
     </div>

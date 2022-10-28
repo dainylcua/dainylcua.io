@@ -32,7 +32,7 @@ export default function Nav() {
             </Link> */}
           </div>
           <div className="self-center w-1/6 pr-4">
-              <IconContext.Provider value={{ className: "text-rose-300 hover:text-orange-300 hover:scale-110 transition ease-in-out", size: "1.5em"}}>
+              <IconContext.Provider value={{ className: "text-rose-500 hover:text-orange-500 hover:scale-110 transition ease-in-out", size: "1.5em"}}>
                 <div className="flex justify-between">
                   <a href="https://github.com/dainylcua/">
                     <SiGithub />

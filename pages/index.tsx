@@ -5,7 +5,6 @@ import Posts from "../components/sections/Posts"
 import AboutMe from "../components/sections/AboutMe"
 import Projects from "../components/sections/Projects"
 import Experience from "../components/sections/Experience"
-import Skills from "../components/sections/Skills"
 import Contact from "../components/sections/Contact"
 import Loading from "../components/Loading"
 import { useEffect, useState } from "react"
@@ -19,7 +18,7 @@ const Home: NextPage = () => {
     }, 3900)
   }, [])
   return (
-    <main className="w-full h-full min-h-screen leading-relaxed bg-stone-900 text-stone-300 animate-fadein">
+    <main className="w-full h-full min-h-screen leading-relaxed bg-stone-900 text-stone-300 selection:bg-orange-700 selection:text-orange-200 text-lg">
       <Head>
         <title>Dainyl Cua</title>
         <meta name="description" content="Dainyl Cua's personal website. Software engineer and technical content creator." />
@@ -33,14 +32,10 @@ const Home: NextPage = () => {
       }
       <Nav/>
       <Hero />
-      <Posts />
-      <div>
-        Scroll down to learn more about me!
-      </div>
       <AboutMe />
-      <Skills />
       <Experience />
       <Projects />
+      <Posts />
       <Contact />
     </main>
   )
