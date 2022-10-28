@@ -1,9 +1,14 @@
-export default function NavLink({ name }: {name: string}) {
+type Props = {
+  href: string,
+  children: string,
+  main?: boolean
+}
+
+export default function NavLink(props: Props) {
+  const { href, children, main } = props
   return(
-    <a href={href} ref={ref} onClick={onClick}>
-      <div className={`dark:active:text-rose-200 dark:hover:bg-zinc-700 active:text-black dark:active:bg-zinc-700 active:bg-zinc-300 hover:bg-zinc-300 p-1.5 ${isActive} rounded-md transition-colors ease-in-out`}>
-        {name}
-      </div>
+    <a href={href} className={`${main ? `text-4xl` : `text-2xl`} font-bold hover:shadow-lg duration-100 transition ease-in-out`}>
+      {children}
     </a>
   )
 }

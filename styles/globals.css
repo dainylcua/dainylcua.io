@@ -22,3 +22,7 @@
     animation-delay: 11s;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

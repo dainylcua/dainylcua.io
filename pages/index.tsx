@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     }, 3900)
   }, [])
   return (
-    <main className="w-full h-full min-h-screen leading-relaxed bg-stone-900 text-stone-300 selection:bg-orange-700 selection:text-orange-200 text-lg">
+    <main className="w-full h-full min-h-screen leading-relaxed bg-stone-900 text-stone-300 selection:bg-orange-700 selection:text-orange-200 text-lg scroll-smooth">
       <Head>
         <title>Dainyl Cua</title>
         <meta name="description" content="Dainyl Cua's personal website. Software engineer and technical content creator." />

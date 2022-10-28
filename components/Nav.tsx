@@ -11,47 +11,42 @@ export default function Nav() {
   return(
     <nav className="h-fit bg-stone-900 w-full mx-auto shadow-nav shadow-orange-900/5">
       {/* Desktop Menu */}
-      <div className="hidden md:block">
-        <div className="flex justify-between py-4">
-          {/* Links */}
-          <div className="flex justify-between w-2/3">
-            {/* <Link href="/" passHref>
-              <NavLink name="Home"/>
-            </Link>
-            <Link href="/blogposts" passHref>
-              <NavLink name="Blogposts"/>
-            </Link>
-            <Link href="/goals" passHref>
-              <NavLink name="Goals"/>
-            </Link>
-            <Link href="/pomodoro" passHref>
-              <NavLink name="Pomodoro"/>
-            </Link>
-            <Link href="/info" passHref>
-              <NavLink name="Info"/>
-            </Link> */}
-          </div>
-          <div className="self-center w-1/6 pr-4">
-              <IconContext.Provider value={{ className: "text-rose-500 hover:text-orange-500 hover:scale-110 transition ease-in-out", size: "1.5em"}}>
-                <div className="flex justify-between">
-                  <a href="https://github.com/dainylcua/">
-                    <SiGithub />
-                  </a>
-                  <a href="https://www.linkedin.com/in/dainylcua/">
-                    <SiLinkedin />
-                  </a>
-                  <a href="https://leetcode.com/dainylcua/">
-                    <SiLeetcode />
-                  </a>
-                  <a href="https://www.codewars.com/users/dainylcua">
-                    <SiCodewars />
-                  </a>
-                  <a href="https://www.twilio.com/blog/author/dcua">
-                    <SiTwilio />
-                  </a>
-                </div>
-              </IconContext.Provider>
-          </div>
+      <div className="hidden md:flex items-center justify-between py-4 px-8 text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-rose-500">
+        <div className="w-7/12">
+          <NavLink href="/" main>dainylcua.io</NavLink>
+        </div>
+        {/* Links */}
+        <div className="flex justify-between w-5/12 px-8">
+          <NavLink href="#about">
+            about
+          </NavLink>
+          <NavLink href="#experience">
+            experience
+          </NavLink>
+          <NavLink href="#projects">
+            projects
+          </NavLink>
+          <NavLink href="#posts">
+            posts
+          </NavLink>
+          <NavLink href="#contact">
+            contact
+          </NavLink>
+          {/* <Link href="/" passHref>
+            <NavLink name="Home"/>
+          </Link>
+          <Link href="/blogposts" passHref>
+            <NavLink name="Blogposts"/>
+          </Link>
+          <Link href="/goals" passHref>
+            <NavLink name="Goals"/>
+          </Link>
+          <Link href="/pomodoro" passHref>
+            <NavLink name="Pomodoro"/>
+          </Link>
+          <Link href="/info" passHref>
+            <NavLink name="Info"/>
+          </Link> */}
         </div>
       </div>
 

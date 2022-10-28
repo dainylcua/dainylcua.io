@@ -4,6 +4,7 @@ import Image from "next/image"
 import profilePic from "../../public/rsz_professional-2.png"
 import ExtLink from "../ExtLink"
 import GRHeader from "../GridRowHeader"
+import AboutSection from "../AboutSection"
 
 
 export default function AboutMe() {
@@ -16,22 +17,18 @@ export default function AboutMe() {
       </div>
       <div className="flex items-center">
         <div className="mr-16 flex flex-col">
-          <div className="lg:grid grid-cols-5 py-4">
-            <GRHeader>Intro</GRHeader>
-            <p className="col-span-4">Hi! I am Dainyl Cua, and I create full-stack applications with a purpose. I also dabble in <ExtLink href="https://dc-blog-omega.vercel.app/blogposts">writing technical content aimed at developers</ExtLink> in case that's your fancy. My end goal is to get into a position where I can help underrepresented communities get into tech. I hope I can help you learn a thing or two!</p>
-          </div>
-          <div className="lg:grid grid-cols-5 py-4">
-            <GRHeader>Degree</GRHeader>
-            <p className="col-span-4">I graduated from Texas A&M University in 2020 with a <ExtLink href="https://github.com/dainylcua/dc-resume/raw/main/Diploma.pdf">Bachelor's of Science in Chemical Engineering</ExtLink>. I worked at an environmental consulting agency for 9 months, lost my job due to COVID, and started my journey into tech.</p>
-          </div>
-          <div className="lg:grid grid-cols-5 py-4">
-            <GRHeader>Coding</GRHeader>
-            <p className="col-span-4">After learning the fundamentals of web devlopment, I studied Software Engineering at <ExtLink href="https://generalassemb.ly/">General Assembly&apos;s</ExtLink> coding bootcamp, then developed a prototype Jamstack EdTech website under <ExtLink href="https://danieljs.io/">my bootcamp instructor</ExtLink>, and worked as a <ExtLink href="https://www.twilio.com/blog/introducing-developer-voices-intern-dainyl-cua">Software Engineer for Technical Content</ExtLink> at Twilio, the industry leader for cloud communications.</p>
-          </div>
-          <div className="lg:grid grid-cols-5 py-4">
-            <GRHeader>Hobbies</GRHeader>
-            <p className="col-span-4">Out of work, you&apos;ll find me playing Dungeons & Dragons, gaming, cooking and baking, or messing with my pets! That is, if I haven&apos;t found something new to try out.</p>
-          </div>
+          <AboutSection header="Intro">
+            Hi! I am Dainyl Cua, and I create full-stack applications with a purpose. I also dabble in <ExtLink href="https://dc-blog-omega.vercel.app/blogposts">writing technical content aimed at developers</ExtLink> in case that's your fancy. My end goal is to get into a position where I can help underrepresented communities get into tech. I hope I can help you learn a thing or two!
+          </AboutSection>
+          <AboutSection header="Degree">
+            I graduated from Texas A&M University in 2020 with a <ExtLink href="https://github.com/dainylcua/dc-resume/raw/main/Diploma.pdf">Bachelor's of Science in Chemical Engineering</ExtLink>. I worked at an environmental consulting agency for 9 months, lost my job due to COVID, and started my journey into tech.
+          </AboutSection>
+          <AboutSection header="Coding">
+            After learning the fundamentals of web devlopment, I studied Software Engineering at <ExtLink href="https://generalassemb.ly/">General Assembly&apos;s</ExtLink> coding bootcamp, then developed a prototype Jamstack EdTech website under <ExtLink href="https://danieljs.io/">my bootcamp instructor</ExtLink>, and worked as a <ExtLink href="https://www.twilio.com/blog/introducing-developer-voices-intern-dainyl-cua">Software Engineer for Technical Content</ExtLink> at Twilio, the industry leader for cloud communications.
+          </AboutSection>
+          <AboutSection header="Hobbies">
+            Out of work, you&apos;ll find me playing Dungeons & Dragons, gaming, cooking and baking, or messing with my pets! That is, if I haven&apos;t found something new to try out.
+          </AboutSection>
         </div>
         <div className="hidden lg:block relative">
           <>
