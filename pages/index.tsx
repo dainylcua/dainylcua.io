@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     }, 3900)
   }, [])
   return (
-    <main className="w-full h-full min-h-screen px-8 leading-relaxed dark:bg-stone-900 bg-neutral-50 text-stone-700 dark:text-stone-200 animate-fadein">
+    <main className="w-full h-full min-h-screen leading-relaxed bg-stone-900 text-stone-300 animate-fadein">
       <Head>
         <title>Dainyl Cua</title>
         <meta name="description" content="Dainyl Cua's personal website. Software engineer and technical content creator." />
@@ -30,8 +30,6 @@ const Home: NextPage = () => {
           :
           <></>
       }
-      <div className="max-w-3xl mx-auto">
-
         <Hero />
         <Posts />
         <div>
@@ -42,8 +40,6 @@ const Home: NextPage = () => {
         <Experience />
         <Projects />
         <Contact />
-        
-      </div>
     </main>
   )
 }

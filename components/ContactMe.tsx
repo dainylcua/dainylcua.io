@@ -1,7 +1,9 @@
+import LayoutContainer from "./LayoutContainer"
+
 export default function Contact() {
   return(
-    <div>
+    <LayoutContainer>
       Posts
-    </div>
+    </LayoutContainer>
   )
 }

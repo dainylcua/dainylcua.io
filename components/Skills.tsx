@@ -1,7 +1,9 @@
+import LayoutContainer from "./LayoutContainer"
+
 export default function Skills() {
   return(
-    <div>
+    <LayoutContainer>
       Skills
-    </div>
+    </LayoutContainer>
   )
 }

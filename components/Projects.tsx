@@ -1,7 +1,9 @@
+import LayoutContainer from "./LayoutContainer"
+
 export default function Projects() {
   return(
-    <div>
+    <LayoutContainer>
       <h2>Projects</h2>
-    </div>
+    </LayoutContainer>
   )
 }

@@ -1,10 +1,12 @@
+import LayoutContainer from "./LayoutContainer"
+
 export default function Experience() {
   return(
-    <div>
+    <LayoutContainer>
       <h2>Experience</h2>
       <div>
         List of jobs (contentful)
       </div>
-    </div>
+    </LayoutContainer>
   )
 }
