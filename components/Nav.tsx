@@ -9,9 +9,11 @@ import { useState } from 'react'
 export default function Nav() {
   const [menuState, setMenuState] = useState(false)
   return(
-    <nav className="h-auto bg-stone-900 w-full mx-auto shadow-lg">
+    <nav className="h-fit bg-stone-900 w-full mx-auto shadow-nav shadow-rose-900/5">
+      {/* Desktop Menu */}
       <div className="hidden md:block">
         <div className="flex justify-between py-4">
+          {/* Links */}
           <div className="flex justify-between w-2/3">
             {/* <Link href="/" passHref>
               <NavLink name="Home"/>
@@ -30,7 +32,7 @@ export default function Nav() {
             </Link> */}
           </div>
           <div className="self-center w-1/5 pr-4">
-              <IconContext.Provider value={{ className: "text-stone-300 hover:text-stone-200 hover:scale-110 transition ease-in-out", size: "1.5em"}}>
+              <IconContext.Provider value={{ className: "text-rose-300 hover:text-orange-300 hover:scale-110 transition ease-in-out", size: "1.5em"}}>
                 <div className="flex justify-between">
                   <a href="https://github.com/dainylcua/">
                     <SiGithub />
@@ -46,6 +48,8 @@ export default function Nav() {
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       <div className="block md:hidden">
         <div className="py-4">
           <IconContext.Provider value={{ className: "text-stone-300 hover:text-stone-200 hover:scale-110 transition ease-in-out", size:"1.5em"}}>
@@ -79,6 +83,8 @@ export default function Nav() {
           </Link> */}
         </ul>
       </div>
+
+      {/* Border */}
       <div className="bg-gradient-to-r from-orange-700 to-rose-500 h-[1.5px] rounded-full w-full mx-auto" />
     </nav>
   )
