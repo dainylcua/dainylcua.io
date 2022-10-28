@@ -14,7 +14,7 @@ export default function Hero({}) {
           DAINYL CUA
         </h1>
         <h2 className="font-semibold text-stone-200 lg:text-4xl md:text-2xl pb-8">
-          Fullstack Developer. Technical Writer. Content Creator.
+          Fullstack Developer. Technical Writer. Endless Learner. D&D Fanatic.
         </h2>
         <p>
           Focused on creating applications with a purpose and content that educates while positively impacting the world with my coding skills.
