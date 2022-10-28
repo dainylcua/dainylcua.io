@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 
 type Props = {
   color?: string,
+  id: string,
   children: ReactNode
 }
 

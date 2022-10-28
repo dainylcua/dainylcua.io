@@ -2,7 +2,7 @@ import LayoutContainer from "./LayoutContainer"
 
 export default function Skills() {
   return(
-    <LayoutContainer>
+    <LayoutContainer id="skills">
       Skills
     </LayoutContainer>
   )

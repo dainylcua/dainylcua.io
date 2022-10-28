@@ -3,7 +3,7 @@ import LayoutContainer from "./LayoutContainer"
 
 export default function AboutMe() {
   return(
-    <LayoutContainer color="bg-rose-500">
+    <LayoutContainer color="bg-rose-500" id="about">
       <h2>
         About Me
       </h2>
