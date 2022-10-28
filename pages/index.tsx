@@ -7,16 +7,30 @@ import Projects from "../components/Projects"
 import Experience from "../components/Experience"
 import Skills from "../components/Skills"
 import Contact from "../components/Contact"
+import Loading from "../components/Loading"
+import { useEffect, useState } from "react"
 
 const Home: NextPage = () => {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    }, 3900)
+  }, [])
   return (
-    <main className="w-full h-full min-h-screen px-8 leading-relaxed dark:bg-zinc-900 bg-zinc-50 text-zinc-800 dark:text-zinc-100 animate-fadein">
+    <main className="w-full h-full min-h-screen px-8 leading-relaxed dark:bg-stone-900 bg-neutral-50 text-stone-700 dark:text-stone-200 animate-fadein">
+      <Head>
+        <title>Dainyl Cua</title>
+        <meta name="description" content="Dainyl Cua's personal website. Software engineer and technical content creator." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      {
+        loading ? 
+          <Loading />
+          :
+          <></>
+      }
       <div className="max-w-3xl mx-auto">
-        <Head>
-          <title>Dainyl Cua</title>
-          <meta name="description" content="Dainyl Cua's personal website. Software engineer and technical content creator." />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
 
         <Hero />
         <Posts />

@@ -34,20 +34,31 @@ module.exports = {
           '100%': { opacity: 1 }
         },
         popin: {
-          '0%, 60%, 100%': { opacity: 0 },
-          '30%': { opacity: 1 }
+          '0%': { opacity: 0, transform: 'translateY(-100px)' },
+          '30%': { opacity: 1, transform: 'translateY(0px)' },
+          '40%': { opacity: 0.05 },
+          '60%': { opacity: 0, transform: 'translateY(50px)' },
+          '100%': { opacity: 0, transform: 'translateY(100px)' },
         },
         popout: {
-          '0%, 50%, 100%': { opacity: 0 },
-          '80%' : { opacity: 1 }
+          '0%,': { opacity: 0 },
+          '30%': { opacity: 0, transform: 'translateY(-90px)' },
+          '80%' : { opacity: 1, transform: 'translateY(0px)' },
+          '100%' : { opacity: 1, transform: 'translateY(0px)' },
+        },
+        movedown: {
+          '0%': { transform: "translateY(0vh)", height: "100vh" },
+          '95%': { transform: "translateY(0vh)", height: "100vh" },
+          '100%': { transform: "translateY(100vh)", height: "0vh" },
         }
       }
     },
     animation: {
       fadein: 'fadein 1s ease-in-out',
       fadeout: 'fadeout 1s ease-in-out',
-      popin: 'popin 3s',
-      popout: 'popout 3s'
+      popin: 'popin 4s',
+      popout: 'popout 4s',
+      moveout: 'movedown 4s ease-out'
     }
   },
   plugins: [],
