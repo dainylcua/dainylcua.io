@@ -1,4 +1,4 @@
-import { SiGithub, SiLinkedin, SiLeetcode  } from "react-icons/si"
+import { SiGithub, SiLinkedin, SiLeetcode, SiCodewars, SiTwilio  } from "react-icons/si"
 import { MdMenu, MdMenuOpen } from "react-icons/md"
 import { IconContext } from "react-icons/lib"
 import NavLink from "./NavLink"
@@ -9,7 +9,7 @@ import { useState } from 'react'
 export default function Nav() {
   const [menuState, setMenuState] = useState(false)
   return(
-    <nav className="h-fit bg-stone-900 w-full mx-auto shadow-nav shadow-rose-900/5">
+    <nav className="h-fit bg-stone-900 w-full mx-auto shadow-nav shadow-orange-900/5">
       {/* Desktop Menu */}
       <div className="hidden md:block">
         <div className="flex justify-between py-4">
@@ -31,7 +31,7 @@ export default function Nav() {
               <NavLink name="Info"/>
             </Link> */}
           </div>
-          <div className="self-center w-1/5 pr-4">
+          <div className="self-center w-1/6 pr-4">
               <IconContext.Provider value={{ className: "text-rose-300 hover:text-orange-300 hover:scale-110 transition ease-in-out", size: "1.5em"}}>
                 <div className="flex justify-between">
                   <a href="https://github.com/dainylcua/">
@@ -42,6 +42,12 @@ export default function Nav() {
                   </a>
                   <a href="https://leetcode.com/dainylcua/">
                     <SiLeetcode />
+                  </a>
+                  <a href="https://www.codewars.com/users/dainylcua">
+                    <SiCodewars />
+                  </a>
+                  <a href="https://www.twilio.com/blog/author/dcua">
+                    <SiTwilio />
                   </a>
                 </div>
               </IconContext.Provider>

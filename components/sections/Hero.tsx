@@ -1,9 +1,6 @@
-import Image from "next/image"
-import profilePic from '../../public/headshot-2-1x1.jpg'
-
 export default function Hero({}) {
   return(
-    <header className="flex md:items-center py-16 text-lg w-full border-b border-b-stone-800 h-screen text-center relative">
+    <header className="flex lg:items-center py-8 lg:py-16 text-lg w-full border-b border-b-stone-800 lg:h-[94vh] text-center relative">
       {/* <a href="https://www.linkedin.com/in/dainylcua/" target="_blank" rel="noopener noreferrer">
         <div className="rounded-full ring-red-900 ring-4 h-[200px] w-[200px] hover:scale-110 transition ease-out">
           <Image src={profilePic} className="rounded-full" alt="Dainyl Cua"/>
@@ -19,10 +16,10 @@ export default function Hero({}) {
       </>
 
         <div className="w-full mx-auto text-center relative">
-          <h1 className="py-12 font-bold tracking-tight text-transparent md:text-[10rem] text-6xl bg-clip-text bg-gradient-to-r from-orange-700 to-rose-500">
+          <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] md:text-7xl text-6xl bg-clip-text bg-gradient-to-r from-orange-700 to-rose-500">
             DAINYL CUA
           </h1>
-          <h2 className="font-semibold text-stone-200 md:text-4xl pb-8">
+          <h2 className="font-semibold text-stone-200 lg:text-4xl md:text-2xl pb-8">
             Fullstack Developer. Technical Writer. Content Creator.
           </h2>
           <p>
