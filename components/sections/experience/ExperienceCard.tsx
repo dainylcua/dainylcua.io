@@ -5,7 +5,7 @@ type Props = {
 export default function ExperienceCard(props: Props) {
   const { reverse } = props
   return(
-    <div className={`${reverse ? `items-end self-end text-end` : ``} flex flex-col bg-gradient-to-br bg-stone-50 text-stone-900 p-2 w-80 shadow-2xl shadow-stone-900 my-8`}>
+    <div className={`${reverse ? `items-end self-end text-end` : ``} flex flex-col bg-gradient-to-br bg-stone-100 text-stone-900 p-2 w-80 shadow-2xl shadow-stone-900 my-8`}>
       <div className="w-60 p-2">
         <div>Time</div>
         <div>Company</div>
