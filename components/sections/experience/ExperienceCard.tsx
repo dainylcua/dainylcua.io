@@ -12,7 +12,7 @@ export default function ExperienceCard(props: Props) {
         <p>Position</p>
         <p>Responsibilities</p>
       </div>
-      <p className={`${reverse ? `mr-10` : `ml-8`} bg-gradient-to-br text-stone-900 from-orange-500 to-rose-500 p-8  shadow-xl shadow-orange-900/50 w-80`}>
+      <p className={`${reverse ? `mr-10` : `ml-8`} bg-gradient-to-br from-orange-500 to-rose-500 p-8  shadow-xl shadow-orange-900/50 w-80`}>
           Skills
       </p>
     </div>
