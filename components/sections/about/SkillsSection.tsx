@@ -5,7 +5,7 @@ export default function SkillsSection() {
     <div className="lg:flex py-4 w-full">
       <GRHeader>Skills</GRHeader>
       <div className="lg:ml-[4.5rem]">
-        <p className="flex flex-wrap gap-1">
+        <p className="flex flex-wrap gap-1 mb-2">
           <span className="text-transparent bg-clip-text bg-gradient-to-br from-rose-500 to-orange-300">Programming Languages:</span>
           <span>JavaScript,</span>
           <span>TypeScript,</span>
@@ -16,7 +16,7 @@ export default function SkillsSection() {
           <span>Python,</span>
           <span>Rust</span>
         </p>
-        <p className="flex flex-wrap gap-1">
+        <p className="flex flex-wrap gap-1 mb-2">
           <span className="text-transparent bg-clip-text bg-gradient-to-br from-rose-500 to-orange-300">Libraries & Frameworks:</span>
           <span>React,</span>
           <span>Next.js,</span>
@@ -28,7 +28,7 @@ export default function SkillsSection() {
           <span>Django,</span>
           <span>Flask</span>
         </p>
-        <p className="flex flex-wrap gap-1">
+        <p className="flex flex-wrap gap-x-1">
           <span className="text-transparent bg-clip-text bg-gradient-to-br from-rose-500 to-orange-300">Tools & Technologies:</span>
           <span>Git,</span>
           <span>GitHub,</span>

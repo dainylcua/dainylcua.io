@@ -16,7 +16,7 @@ export default function Hero({}) {
         <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] md:text-7xl text-6xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500">
           DAINYL CUA
         </h1>
-        <h2 className="font-semibold text-stone-200 lg:text-4xl md:text-2xl pb-8">
+        <h2 className="font-semibold text-stone-100 lg:text-4xl md:text-2xl pb-8">
           Fullstack Developer. Technical Writer. Endless Learner. D&D Fanatic.
         </h2>
         <p className="pb-8">

@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import Hero from "../components/sections/Hero"
-import Posts from "../components/sections/Posts"
+import Posts from "../components/sections/posts/Posts"
 import AboutMe from "../components/sections/about/AboutMe"
 import Projects from "../components/sections/projects/Projects"
 import Experience from "../components/sections/experience/Experience"

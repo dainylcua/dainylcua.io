@@ -1,7 +1,7 @@
 export default function ContactCard() {
   return(
     <div className="flex">
-      <div className="flex flex-col w-2/12 shadow-2xl bg-stone-100 p-4 h-[18rem] rounded-xl relative overflow-hidden overflow-x-auto text-stone-800">
+      <div className="flex flex-col w-2/12 shadow-2xl bg-stone-200 p-4 h-[18rem] rounded-xl relative overflow-hidden overflow-x-auto text-stone-900">
         <div>
           Linkedin Icon
         </div>
@@ -12,7 +12,7 @@ export default function ContactCard() {
           Calendly
         </div>
       </div>
-      <div className="flex flex-col w-full shadow-2xl bg-stone-100 mx-4 p-4 h-[18rem] rounded-xl relative overflow-hidden overflow-x-auto text-stone-800">
+      <div className="flex flex-col w-full shadow-2xl bg-stone-200 mx-4 p-4 h-[18rem] rounded-xl relative overflow-hidden overflow-x-auto text-stone-900">
         <div className="">
           Information, changes when icon is clicked
         </div>
