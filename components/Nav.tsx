@@ -12,11 +12,11 @@ export default function Nav() {
     <nav className="h-fit bg-stone-900 w-full mx-auto shadow-nav shadow-orange-900/5">
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center justify-between py-6 px-10 text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-rose-500">
-        <div className="w-7/12">
+        <div className="w-1/2 lg:w-7/12">
           <NavLink href="/" main>dainylcua.io</NavLink>
         </div>
         {/* Links */}
-        <div className="flex justify-between w-4/12 px-8">
+        <div className="flex justify-between w-1/2 lg:w-4/12 mx-8">
           <NavLink href="#about">
             about
           </NavLink>

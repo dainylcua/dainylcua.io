@@ -3,7 +3,7 @@ import { SiGithub, SiLinkedin, SiLeetcode, SiCodewars, SiTwilio } from "react-ic
 
 export default function Hero({}) {
   return(
-    <header className="flex lg:items-center py-8 lg:py-16 text-xl w-full lg:h-[94vh] text-center relative">
+    <header className="flex lg:items-center py-8 lg:py-16 text-xl w-full lg:h-[94vh] text-center relative overflow-hidden">
       {/* Blobs */}
       <>
         <div className="absolute top-70 left-[25vw] w-[34rem] h-[34rem] rounded-full bg-rose-300 mix-blend-multiply filter blur-2xl hidden lg:block animate-blob opacity-70" />

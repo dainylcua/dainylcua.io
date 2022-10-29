@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'nav': '0px 0.5px 0.8px hsl(18deg 100% 24%; / 0), 0px 5.2px 7.8px hsl(18deg 100% 24%; / 0.08), -0.1px 9.3px 14px hsl(18deg 100% 24%; / 0.16), -0.1px 13.5px 20.3px hsl(18deg 100% 24%; / 0.23), -0.2px 18.9px 28.4px hsl(18deg 100% 24%; / 0.31), -0.2px 26.2px 39.3px hsl(18deg 100% 24%; / 0.39), -0.3px 36.3px 54.5px hsl(18deg 100% 24%; / 0.47), -0.4px 50.1px 75.2px hsl(18deg 100% 24%; / 0.54);'
+        'nav': '0px 0.5px 0.8px hsl(18deg 100% 24%; / 0), 0px 5.2px 7.8px hsl(18deg 100% 24%; / 0.08), -0.1px 9.3px 14px hsl(18deg 100% 24%; / 0.16), -0.1px 13.5px 20.3px hsl(18deg 100% 24%; / 0.23), -0.2px 18.9px 28.4px hsl(18deg 100% 24%; / 0.31), -0.2px 26.2px 39.3px hsl(18deg 100% 24%; / 0.39), -0.3px 36.3px 54.5px hsl(18deg 100% 24%; / 0.47), -0.4px 50.1px 75.2px hsl(18deg 100% 24%; / 0.54);',
+        'inner-heavy': 'box-shadow: inset 0 2px 4px 0 hsl(18deg 100% 24%; / 0.54);',
       },
       keyframes: {
         fadeout: {
