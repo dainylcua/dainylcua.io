@@ -6,7 +6,9 @@ import ExperienceCard from "./ExperienceCard"
 export default function Experience() {
   return(
     <LayoutContainer color="bg-stone-800" id="experience">
-      <Header2>My Experience</Header2>
+      <div className="flex w-full justify-center">
+        <Header2>My Experience</Header2>
+      </div>
       <div className="flex flex-col w-full">
         <div className="flex flex-col">
           <ExperienceCard />

@@ -26,7 +26,7 @@ export default function AboutMe() {
             After learning the fundamentals of web devlopment, I studied Software Engineering at <ExtLink href="https://generalassemb.ly/">General Assembly&apos;s</ExtLink> coding bootcamp, then developed a prototype Jamstack EdTech website under <ExtLink href="https://danieljs.io/">my bootcamp instructor</ExtLink>, and worked as a <ExtLink href="https://www.twilio.com/blog/introducing-developer-voices-intern-dainyl-cua">Software Engineer for Technical Content</ExtLink> at Twilio, the industry leader for cloud communications.
           </AboutSection>
           <AboutSection header="Hobbies">
-            Out of work, you&apos;ll find me playing Dungeons & Dragons, gaming, cooking and baking, or messing with my pets! That is, if I haven&apos;t found something new to try out.
+            Out of work, you&apos;ll find me playing Dungeons & Dragons, gaming, listening to music, cooking, baking, or messing with my pets! That is, if I haven&apos;t found something new to try out.
           </AboutSection>
         </div>
         <div className="hidden lg:block relative">
