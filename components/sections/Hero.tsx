@@ -12,7 +12,7 @@ export default function Hero({}) {
         <div className="absolute top-60 left-[30vw] w-[22rem] h-[22rem] rounded-full bg-stone-300 mix-blend-multiply filter blur-2xl hidden lg:block animate-blob animation-delay-7000 opacity-70" />
       </>
 
-      <div className="w-full mx-auto text-center relative flex flex-col items-center mb-16">
+      <div className="w-full mx-auto px-8 text-center relative flex flex-col items-center mb-16">
         <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] md:text-7xl text-6xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500">
           DAINYL CUA
         </h1>
@@ -23,22 +23,22 @@ export default function Hero({}) {
           Focused on creating applications with a purpose and content that educates while positively impacting the world with my coding skills.
         </p>
         <div className="w-60">
-          <IconContext.Provider value={{ className: "text-rose-500 hover:text-orange-500 transition ease-in-out", size: "1.5em"}}>
+          <IconContext.Provider value={{ className: "text-orange-500 hover:text-rose-500 cursor-pointer transition ease-in-out", size: "1.5em"}}>
                 <div className="w-full flex justify-between">
+                  <a href="https://www.linkedin.com/in/dainylcua/">
+                    <SiLinkedin />
+                  </a>
                   <a href="https://github.com/dainylcua/">
                     <SiGithub />
                   </a>
-                  <a href="https://www.linkedin.com/in/dainylcua/">
-                    <SiLinkedin />
+                  <a href="https://www.twilio.com/blog/author/dcua">
+                    <SiTwilio />
                   </a>
                   <a href="https://leetcode.com/dainylcua/">
                     <SiLeetcode />
                   </a>
                   <a href="https://www.codewars.com/users/dainylcua">
                     <SiCodewars />
-                  </a>
-                  <a href="https://www.twilio.com/blog/author/dcua">
-                    <SiTwilio />
                   </a>
                 </div>
           </IconContext.Provider>
