@@ -16,31 +16,34 @@ export default function Hero({}) {
         <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] md:text-7xl text-6xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500">
           DAINYL CUA
         </h1>
-        <h2 className="font-semibold text-stone-100 lg:text-4xl md:text-2xl pb-8">
-          Fullstack Developer. Technical Writer. Endless Learner. D&D Fanatic.
+        <h2 className="font-semibold text-stone-100 lg:text-4xl md:text-2xl pb-8 flex lg:flex-row flex-col gap-2">
+          <span>Fullstack Developer.</span>
+          <span>Technical Writer.</span>
+          <span>Endless Learner.</span>
+          <span>D&D Fanatic.</span>
         </h2>
         <p className="pb-8">
           Focused on creating applications with a purpose and content that educates while positively impacting the world with my coding skills.
         </p>
         <div className="w-60">
           <IconContext.Provider value={{ className: "text-orange-500 hover:text-rose-500 cursor-pointer transition ease-in-out", size: "1.5em"}}>
-                <div className="w-full flex justify-between">
-                  <a href="https://www.linkedin.com/in/dainylcua/">
-                    <SiLinkedin />
-                  </a>
-                  <a href="https://github.com/dainylcua/">
-                    <SiGithub />
-                  </a>
-                  <a href="https://www.twilio.com/blog/author/dcua">
-                    <SiTwilio />
-                  </a>
-                  <a href="https://leetcode.com/dainylcua/">
-                    <SiLeetcode />
-                  </a>
-                  <a href="https://www.codewars.com/users/dainylcua">
-                    <SiCodewars />
-                  </a>
-                </div>
+            <div className="w-full flex justify-between">
+              <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/dainylcua/">
+                <SiLinkedin />
+              </a>
+              <a target="_blank" rel="noreferrer noopener" href="https://github.com/dainylcua/">
+                <SiGithub />
+              </a>
+              <a target="_blank" rel="noreferrer noopener" href="https://www.twilio.com/blog/author/dcua">
+                <SiTwilio />
+              </a>
+              <a target="_blank" rel="noreferrer noopener" href="https://leetcode.com/dainylcua/">
+                <SiLeetcode />
+              </a>
+              <a target="_blank" rel="noreferrer noopener" href="https://www.codewars.com/users/dainylcua">
+                <SiCodewars />
+              </a>
+            </div>
           </IconContext.Provider>
         </div>
       </div>

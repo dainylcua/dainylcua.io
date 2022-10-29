@@ -8,7 +8,10 @@ export default function Posts() {
       <div className="flex w-full justify-center">
         <Header2>Blogposts</Header2>
       </div>
-      <div className="grid grid-cols-3 gap-y-4 auto-cols-min">
+      <div className="grid grid-rows-2 grid-flow-col md:px-0 p-4 gap-4 w-full shadow-[inset_0_-2px_30px_rgba(0,0,0,0.53)] md:bg-stone-800 bg-stone-900 rounded-xl relative overflow-x-auto h-fit md:mx-0 mx-auto">
+        <PostsCard />
+        <PostsCard />
+        <PostsCard />
         <PostsCard />
         <PostsCard />
         <PostsCard />

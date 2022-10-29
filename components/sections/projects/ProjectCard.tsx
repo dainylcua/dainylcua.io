@@ -18,7 +18,7 @@ export default function ProjectCard(props: Props) {
         </div>
         <div className="grid grid-rows-4 flex-1">
           <div className="row-span-3 grid grid-rows-6 p-2">
-            <h3 className="row-span-1 text-2xl font-bold">
+            <h3 className="row-span-1 text-3xl font-bold">
               Project Name
             </h3>
             <p className="row-span-5">
@@ -31,7 +31,7 @@ export default function ProjectCard(props: Props) {
         </div>
       </a>
       <div className="absolute top-2 left-2 flex flex-row">
-            <IconContext.Provider value={{ size: "2em", className: "cursor-pointer text-orange-500 group-hover:text-rose-500 group-hover:-translate-y-2 transition ease-out duration-400" }}>
+            <IconContext.Provider value={{ size: "2em", className: "cursor-pointer text-orange-500 hover:text-rose-500 group-hover:-translate-y-2 transition ease-out duration-400" }}>
               <a href="https://github.com/dainylcua/dc-personal-website" target="_blank" rel="noopener noreferrer">
                 <SiGithub />
               </a>

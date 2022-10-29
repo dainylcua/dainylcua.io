@@ -5,7 +5,7 @@ import ContactCard from "./ContactCard"
 export default function Contact() {
   return(
     <LayoutContainer id="posts">
-      <div className="flex w-full">
+      <div className="flex justify-center md:justify-start">
         <Header2>Contact Me</Header2>
       </div>
       <ContactCard />

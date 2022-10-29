@@ -10,7 +10,7 @@ import SkillsSection from "./SkillsSection"
 export default function AboutMe() {
   return(
     <LayoutContainer id="about">
-      <div className="flex items-center">
+      <div className="flex justify-center md:justify-start">
         <Header2>
           About Me
         </Header2>
