@@ -17,7 +17,7 @@ export default function ProjectCard(props: Props) {
           <Image src={mountain} alt="project title" width={384} height={208} objectFit="cover" className="rounded-t-md" />
         </div>
         <div className="grid grid-rows-4 flex-1">
-          <div className="row-span-3 grid grid-rows-6 p-2">
+          <div className="row-span-3 grid grid-rows-6 p-4">
             <h3 className="row-span-1 text-3xl font-bold">
               Project Name
             </h3>
@@ -25,9 +25,16 @@ export default function ProjectCard(props: Props) {
               description
             </p>
           </div>
-          <p className="row-span-1 auto-rows-max bg-gradient-to-br text-stone-900 from-orange-500 to-rose-500 rounded-b-md p-2">
-            skills
-          </p>
+          <div className="row-span-1 auto-rows-max bg-gradient-to-br text-stone-900 from-orange-500 to-rose-500 rounded-b-md p-2">
+            <div className={`flex flex-col relative`}>
+              <div>
+                Icon
+              </div>
+              <p>
+                Skill name 
+              </p>
+            </div>
+          </div>
         </div>
       </a>
       <div className="absolute top-2 left-2 flex flex-row">
