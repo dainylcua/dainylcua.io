@@ -27,38 +27,41 @@ export default function ContactCard() {
   })
   return(
     <div className="flex">
-      <div className="flex flex-col w-full shadow-2xl bg-stone-200 p-4 h-96 rounded-xl relative overflow-hidden overflow-x-auto text-stone-900">
-        <p className="border border-b-red-200">
-          Hi! Fill the form below with your information and I'll get back to you as quick as I can!
+      <div className="flex flex-col w-full shadow-2xl bg-stone-200 p-4 h-fit rounded-xl relative overflow-hidden overflow-x-auto text-stone-900">
+        <p className="border border-b-red-200 px-2">
+          Fill the form below with your information and I'll get back to you as quick as I can!
         </p>
-        <form className=" flex flex-col">
-          <div className="flex">
-            <label htmlFor="name">
+        <form className="flex flex-col">
+          <div className="flex flex-col md:flex-row">
+            <label htmlFor="name" className="md:w-1/2 p-2">
               Name
-              <input 
-              type="text" 
-              onChange={onChange} 
-              value={formState.name} 
-              placeholder="Enter your name" 
-              id="name" 
-              required 
-            />
+              <input
+                className="md:block w-full p-2" 
+                type="text" 
+                onChange={onChange} 
+                value={formState.name} 
+                placeholder="Enter your name" 
+                id="name" 
+                required 
+              />
             </label>
-            <label htmlFor="email">
+            <label htmlFor="email" className="md:w-1/2 p-2">
               Email
-              <input 
-              type="text" 
-              onChange={onChange} 
-              value={formState.email}
-              placeholder="Enter your email" 
-              id="email" 
-              required 
+              <input
+                className="md:block w-full p-2"
+                type="text" 
+                onChange={onChange} 
+                value={formState.email}
+                placeholder="Enter your email" 
+                id="email" 
+                required 
               />
             </label>
           </div>
-          <label htmlFor="subject">
+          <label htmlFor="subject" className="p-2">
             Subject
-            <input 
+            <input
+              className="block w-full p-2" 
               type="text" 
               onChange={onChange} 
               value={formState.subject} 
@@ -66,9 +69,10 @@ export default function ContactCard() {
               id="subject" 
               required />
           </label>
-          <label htmlFor="message">
+          <label htmlFor="message" className="p-2">
             Message
-            <textarea 
+            <textarea
+              className="block w-full p-2" 
               value={formState.message}
               onChange={onChange}
               placeholder="Hi, Dainyl! I saw your profile and think you would be perfect for this upcoming opportunity." 
