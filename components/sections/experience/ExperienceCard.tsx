@@ -17,7 +17,7 @@ export default function ExperienceCard(props: Props) {
           <li>Here's long text that goes forever lorem ipsum lorem ipsum</li>
         </ul>
       </div>
-      <div className={`${ reverse ? `lg:-left-40 md:-right-40 lg:justify-end` : `md:-right-40` } top-4 lg:absolute bg-gradient-to-br from-orange-500 to-rose-500 px-6 py-2  shadow-xl shadow-orange-900/50 lg:w-80 flex rounded-md relative`}>
+      <div className={`${ reverse ? `lg:-left-40 lg:justify-end` : `lg:-right-40` } lg:top-4 lg:absolute bg-gradient-to-br from-orange-500 to-rose-500 px-6 py-2  shadow-xl shadow-orange-900/50 lg:w-80 flex rounded-md relative`}>
         <div className="invisible lg:visible absolute inset-1 bg-gradient-to-br from-orange-500 to-rose-500 rounded-md blur opacity-50 group-hover:opacity-100 transition ease-out duration-500" />
         <div className={`${ reverse ? `lg:justify-end` : `` } flex flex-col relative`}>
           <div>
