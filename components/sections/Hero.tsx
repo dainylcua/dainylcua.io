@@ -1,9 +1,10 @@
 import { IconContext } from "react-icons";
 import { SiGithub, SiLinkedin, SiLeetcode, SiCodewars, SiTwilio } from "react-icons/si";
+import { TfiArrowCircleDown } from "react-icons/tfi"
 
 export default function Hero({}) {
   return(
-    <header className="flex lg:items-center py-8 lg:py-16 text-xl w-full lg:h-[94vh] text-center relative overflow-hidden">
+    <header className="flex flex-col lg:items-center py-8 lg:py-16 text-xl w-full lg:h-[94vh] text-center relative overflow-hidden">
       {/* Blobs */}
       <>
         <div className="absolute top-70 left-[25vw] w-[34rem] h-[34rem] rounded-full bg-rose-300 mix-blend-multiply filter blur-2xl hidden lg:block animate-blob opacity-70" />
@@ -13,10 +14,10 @@ export default function Hero({}) {
       </>
 
       <div className="w-full mx-auto px-8 text-center relative flex flex-col items-center mb-16">
-        <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] md:text-7xl text-6xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500">
+        <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] text-7xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500">
           DAINYL CUA
         </h1>
-        <h2 className="font-semibold text-stone-100 lg:text-4xl md:text-2xl pb-8 flex lg:flex-row flex-col gap-2">
+        <h2 className="font-semibold text-stone-100 lg:text-4xl md:text-2xl pb-8 flex md:flex-row flex-col gap-4">
           <span>Fullstack Developer.</span>
           <span>Technical Writer.</span>
           <span>Endless Learner.</span>
@@ -47,10 +48,9 @@ export default function Hero({}) {
           </IconContext.Provider>
         </div>
       </div>
-
-      <div>
-      
-      </div>
+      <IconContext.Provider value={{ className: "hidden lg:block absolute bottom-32", size: "2em" }}>
+          <TfiArrowCircleDown />
+      </IconContext.Provider>
     </header>
   )
 }

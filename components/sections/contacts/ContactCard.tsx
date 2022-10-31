@@ -28,16 +28,16 @@ export default function ContactCard() {
   })
   return(
     <div className="flex">
-      <div className="flex flex-col w-full shadow-2xl bg-stone-200 p-4 h-fit rounded-xl relative overflow-hidden overflow-x-auto text-stone-900">
-        <p className="border border-b-red-200 px-2">
+      <div className="flex flex-col w-full shadow-2xl bg-stone-100 p-4 h-fit rounded-xl relative overflow-hidden overflow-x-auto text-stone-900">
+        <p className="border-b border-b-orange-300 p-2">
           Fill the form below with your information and I'll get back to you as quick as I can!
         </p>
         <form className="flex flex-col">
           <div className="flex flex-col md:flex-row">
-            <label htmlFor="name" className="md:w-1/2 p-2">
+            <label htmlFor="name" className="md:w-1/2 p-2 text-xl font-semibold">
               Name
               <input
-                className="md:block w-full p-2" 
+                className="md:block w-full p-2 bg-transparent border-b border-orange-300 font-medium" 
                 type="text" 
                 onChange={onChange} 
                 value={formState.name} 
@@ -49,7 +49,7 @@ export default function ContactCard() {
             <label htmlFor="email" className="md:w-1/2 p-2">
               Email
               <input
-                className="md:block w-full p-2"
+                className="md:block w-full p-2 bg-transparent border-b border-orange-300"
                 type="text" 
                 onChange={onChange} 
                 value={formState.email}
@@ -62,7 +62,7 @@ export default function ContactCard() {
           <label htmlFor="subject" className="p-2">
             Subject
             <input
-              className="block w-full p-2" 
+              className="block w-full p-2 bg-transparent border-b border-orange-300" 
               type="text" 
               onChange={onChange} 
               value={formState.subject} 
@@ -73,7 +73,7 @@ export default function ContactCard() {
           <label htmlFor="message" className="p-2">
             Message
             <textarea
-              className="block w-full p-2" 
+              className="block w-full p-2 bg-transparent border-b border-orange-300" 
               value={formState.message}
               onChange={onChange}
               placeholder="Hi, Dainyl! I saw your profile and think you would be perfect for this upcoming opportunity." 

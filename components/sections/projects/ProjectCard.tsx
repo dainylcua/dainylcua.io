@@ -12,7 +12,7 @@ export default function ProjectCard(props: Props) {
   // const { reverse } = props
   return(
     <div className="relative group mx-2">
-      <a href="https://github.com/dainylcua" target="_blank" rel="noopener noreferrer" className="flex flex-col rounded-md w-96 h-full bg-stone-200 text-stone-900 shadow-md hover:shadow-lg transition ease-out group-hover:-translate-y-2 hover:shadow-orange-700/25 cursor-pointer duration-400">
+      <a href="https://github.com/dainylcua" target="_blank" rel="noopener noreferrer" className="flex flex-col rounded-md w-96 h-full bg-stone-100 text-stone-900 shadow-md hover:shadow-lg transition ease-out group-hover:-translate-y-2 hover:shadow-orange-700/25 cursor-pointer duration-400">
         <div className="h-[13rem] border-b">
           <Image src={mountain} alt="project title" width={384} height={208} objectFit="cover" className="rounded-t-md" />
         </div>

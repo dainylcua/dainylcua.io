@@ -9,11 +9,11 @@ export default function Nav() {
     <nav className="h-fit bg-stone-900 w-full mx-auto shadow-nav shadow-orange-900/5">
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center justify-between py-6 mx-10 text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-rose-500">
-        <div className="w-1/3 lg:w-7/12">
+        <div className="w-2/3">
           <NavLink href="/" main>dainylcua.io</NavLink>
         </div>
         {/* Links */}
-        <div className="flex justify-between w-2/3 lg:w-5/12 mx-8">
+        <div className="flex justify-between w-fit mx-8">
           <NavLink href="#about">
             about
           </NavLink>
@@ -24,7 +24,7 @@ export default function Nav() {
             projects
           </NavLink>
           <NavLink href="#posts">
-            posts
+            blogposts
           </NavLink>
           <NavLink href="#contact">
             contact
