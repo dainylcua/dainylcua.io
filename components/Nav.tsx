@@ -1,10 +1,7 @@
-import { SiGithub, SiLinkedin, SiLeetcode, SiCodewars, SiTwilio  } from "react-icons/si"
 import { MdMenu, MdMenuOpen } from "react-icons/md"
 import { IconContext } from "react-icons/lib"
 import NavLink from "./NavLink"
-import Link from "next/link"
 import { useState } from 'react'
-
 
 export default function Nav() {
   const [menuState, setMenuState] = useState(false)

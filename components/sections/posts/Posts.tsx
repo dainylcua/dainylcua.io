@@ -1,8 +1,19 @@
 import Header2 from "../../Header2"
 import LayoutContainer from "../../LayoutContainer"
 import PostsCard from "./PostsCard"
+import { useEffect, Dispatch, SetStateAction } from "react"
+import { ComponentLocations } from "../../../types/types"
 
-export default function Posts() {
+type Props = {
+  setLocations: Dispatch<SetStateAction<ComponentLocations>>
+}
+
+export default function Posts(props: Props) {
+  const { setLocations } = props
+  useEffect(() => {
+    const d = document.querySelector('#posts')
+    if(d) console.log('Posts', window.scrollY - d.getBoundingClientRect().top)
+  }, [])
   return(
     <LayoutContainer color="bg-stone-800" id="posts">
       <div className="flex w-full justify-center">

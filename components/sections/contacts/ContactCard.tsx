@@ -7,14 +7,15 @@ type FormProps = {
   message: string
 }
 
-const initialFormProps: FormProps = {
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
-}
 
 export default function ContactCard() {
+  const initialFormProps: FormProps = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  }
+  
   const [formState, setFormState] = useState<FormProps>(initialFormProps)
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()

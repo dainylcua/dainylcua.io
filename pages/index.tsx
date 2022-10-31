@@ -5,13 +5,23 @@ import Posts from "../components/sections/posts/Posts"
 import AboutMe from "../components/sections/about/AboutMe"
 import Projects from "../components/sections/projects/Projects"
 import Experience from "../components/sections/experience/Experience"
-import Contact from "../components/sections/Contact"
+import Contact from "../components/sections/contacts/Contact"
 import Loading from "../components/sections/Loading"
-import { useEffect, useState } from "react"
 import Nav from "../components/Nav"
+import Navigator from "../components/Navigator"
+import { useEffect, useState } from "react"
+import { ComponentLocations } from "../types/types"
 
 const Home: NextPage = () => {
+  const initialComponentLocations: ComponentLocations = {
+    about: 0,
+    experience: 0,
+    projects: 0,
+    posts: 0,
+    contact: 0,  
+  }
   const [loading, setLoading] = useState(true)
+  const [locations, setLocations] = useState(initialComponentLocations)
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
@@ -30,13 +40,14 @@ const Home: NextPage = () => {
           :
           <></>
       }
+      <Navigator />
       <Nav/>
       <Hero />
-      <AboutMe />
-      <Experience />
-      <Projects />
-      <Posts />
-      <Contact />
+      <AboutMe setLocations={setLocations} />
+      <Experience setLocations={setLocations} />
+      <Projects setLocations={setLocations} />
+      <Posts setLocations={setLocations} />
+      <Contact setLocations={setLocations} />
     </main>
   )
 }

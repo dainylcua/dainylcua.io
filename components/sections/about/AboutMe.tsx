@@ -5,9 +5,19 @@ import profilePic from "../../../public/rsz_professional-2.png"
 import ExtLink from "../../ExtLink"
 import AboutSection from "./AboutSection"
 import SkillsSection from "./SkillsSection"
+import { useEffect, SetStateAction, Dispatch } from "react"
+import { ComponentLocations } from "../../../types/types"
 
+type Props = {
+  setLocations: Dispatch<SetStateAction<ComponentLocations>>
+}
 
-export default function AboutMe() {
+export default function AboutMe(props: Props) {
+  const { setLocations } = props
+  useEffect(() => {
+    const d = document.querySelector('#about')
+    if(d) console.log('AboutMe', window.scrollY - d.getBoundingClientRect().top)
+  }, [])
   return(
     <LayoutContainer id="about">
       <div className="flex justify-center md:justify-start">

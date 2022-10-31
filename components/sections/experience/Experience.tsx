@@ -1,9 +1,19 @@
 import LayoutContainer from "../../LayoutContainer"
 import Header2 from "../../Header2"
-import GRHeader from "../../GridRowHeader"
 import ExperienceCard from "./ExperienceCard"
+import { useEffect, Dispatch, SetStateAction } from "react"
+import { ComponentLocations } from "../../../types/types"
 
-export default function Experience() {
+type Props = {
+  setLocations: Dispatch<SetStateAction<ComponentLocations>>
+}
+
+export default function Experience(props: Props) {
+  const { setLocations } = props
+  useEffect(() => {
+    const d = document.querySelector('#experience')
+    if(d) console.log('Experience', window.scrollY - d.getBoundingClientRect().top)
+  }, [])
   return(
     <LayoutContainer color="bg-stone-800" id="experience">
       <div className="flex w-full justify-center">

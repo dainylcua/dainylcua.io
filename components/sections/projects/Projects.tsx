@@ -1,8 +1,19 @@
 import Header2 from "../../Header2"
 import LayoutContainer from "../../LayoutContainer"
 import ProjectCard from "./ProjectCard"
+import { useEffect, Dispatch, SetStateAction } from "react"
+import { ComponentLocations } from "../../../types/types"
 
-export default function Projects() {
+type Props = {
+  setLocations: Dispatch<SetStateAction<ComponentLocations>>
+}
+
+export default function Projects(props: Props) {
+  const { setLocations } = props
+  useEffect(() => {
+    const d = document.querySelector('#projects')
+    if(d) console.log('Projects', window.scrollY - d.getBoundingClientRect().top)
+  }, [])
   return(
     <LayoutContainer id="projects" extended>
       <div className="flex w-full justify-center md:justify-end">
