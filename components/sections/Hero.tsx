@@ -14,7 +14,7 @@ export default function Hero({}) {
       </>
 
       <div className="w-full mx-auto px-8 text-center relative flex flex-col items-center mb-16">
-        <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] text-7xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500">
+        <h1 className="lg:py-12 py-8 font-bold tracking-tight text-transparent lg:text-[10rem] text-7xl bg-clip-text bg-gradient-to-br from-orange-700 to-rose-500 ring-rose-500">
           DAINYL CUA
         </h1>
         <h2 className="font-semibold text-stone-100 lg:text-4xl md:text-2xl pb-8 flex md:flex-row flex-col gap-4">
@@ -27,7 +27,7 @@ export default function Hero({}) {
           Focused on creating applications with a purpose and content that educates while positively impacting the world with my coding skills.
         </p>
         <div className="w-60">
-          <IconContext.Provider value={{ className: "text-orange-500 hover:text-rose-500 cursor-pointer transition ease-in-out", size: "1.5em"}}>
+          <IconContext.Provider value={{ className: "text-orange-300 hover:text-rose-300 cursor-pointer transition ease-in-out", size: "1.5em"}}>
             <div className="w-full flex justify-between">
               <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/dainylcua/">
                 <SiLinkedin />

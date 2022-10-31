@@ -38,12 +38,12 @@ export default function ProjectCard(props: Props) {
         </div>
       </a>
       <div className="absolute top-2 left-2 flex flex-row">
-            <IconContext.Provider value={{ size: "2em", className: "cursor-pointer text-orange-500 hover:text-rose-500 group-hover:-translate-y-2 transition ease-out duration-400" }}>
-              <a href="https://github.com/dainylcua/dc-personal-website" target="_blank" rel="noopener noreferrer">
-                <SiGithub />
-              </a>
-            </IconContext.Provider>
-          </div>
+        <IconContext.Provider value={{ size: "2em", className: "cursor-pointer text-orange-500 hover:text-rose-500 group-hover:-translate-y-2 transition ease-out duration-400" }}>
+          <a href="https://github.com/dainylcua/dc-personal-website" target="_blank" rel="noopener noreferrer">
+            <SiGithub />
+          </a>
+        </IconContext.Provider>
+      </div>
     </div>
   )
 }
