@@ -8,6 +8,7 @@ import Experience from "../components/sections/experience/Experience"
 import Contact from "../components/sections/contacts/Contact"
 import Loading from "../components/sections/Loading"
 import Nav from "../components/Nav/Nav"
+import ScrollProgress from "../components/ScrollProgress"
 import { useEffect, useState } from "react"
 
 const Home: NextPage = () => {
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3900)
+    }, 3850)
   }, [])
   return (
     <main className="w-full h-full min-h-screen leading-relaxed bg-stone-900 text-stone-300 selection:bg-orange-700 selection:text-orange-200 text-lg scroll-smooth relative">
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
           <></>
       }
       <Nav/>
+      <ScrollProgress />
       <Hero />
       <AboutMe />
       <Experience />

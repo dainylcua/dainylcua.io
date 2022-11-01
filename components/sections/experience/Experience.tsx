@@ -1,9 +1,13 @@
 import LayoutContainer from "../../LayoutContainer"
 import Header2 from "../../Header2"
-import GRHeader from "../../GridRowHeader"
 import ExperienceCard from "./ExperienceCard"
+import { useEffect } from "react"
 
 export default function Experience() {
+  useEffect(() => {
+    const d = document.querySelector('#experience') as HTMLElement
+    console.log(d.offsetTop)
+  }, [])
   return(
     <LayoutContainer color="bg-stone-800" id="experience">
       <div className="flex w-full justify-center">
