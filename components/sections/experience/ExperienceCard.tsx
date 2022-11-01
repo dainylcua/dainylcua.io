@@ -8,10 +8,7 @@ export default function ExperienceCard(props: Props) {
   const { experience } = props
 
   return(
-    <div 
-      className="lg:text-endflex flex-col bg-stone-100 lg:bg-transparent text-stone-900 p-2 w-full lg:w-fit shadow-2xl shadow-stone-900 my-4 rounded-md relative group"
-      key={experience.company}
-    >
+    <div className="lg:text-endflex flex-col bg-stone-100 lg:bg-transparent text-stone-900 p-2 w-full lg:w-fit shadow-2xl shadow-stone-900 my-4 rounded-md relative group">
       <div className="invisible lg:visible absolute inset-1 bg-gradient-to-br from-orange-500 to-rose-500 rounded-md blur opacity-50 group-hover:opacity-100 transition ease-out duration-500" />
       <div className="relative bg-stone-100 w-fit p-4 rounded-md">
         <p className="text-xl font-semibold">
@@ -26,7 +23,7 @@ export default function ExperienceCard(props: Props) {
         <ul className="list-disc list-inside marker:text-orange-500">
           {
             experience.responsibilities.map((responsibility) => (
-              <li>{responsibility}</li>
+              <li key={responsibility}>{responsibility}</li>
             ))
           }
         </ul>

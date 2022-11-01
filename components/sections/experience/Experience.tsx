@@ -18,8 +18,11 @@ export default function Experience(props: Props) {
       <div className="flex flex-col w-full">
         <div className="flex flex-col">
           {
-            experiences.map((experience, index) => (
-              <ExperienceCard experience={experience} />
+            experiences.map((experience) => (
+              <ExperienceCard 
+                experience={experience} 
+                key={experience.company} 
+              />
             ))
           }
         </div>

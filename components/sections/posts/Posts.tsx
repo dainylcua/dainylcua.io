@@ -18,7 +18,7 @@ export default function Posts(props: Props) {
       <div className="grid grid-rows-2 grid-flow-col p-4 gap-4 w-full shadow-[inset_0_-2px_30px_rgba(0,0,0,0.53)] md:bg-stone-800 bg-stone-900 rounded-xl relative overflow-x-auto h-fit md:mx-0 mx-auto">
         {
           blogposts.map((post) => (
-            <PostsCard post={post} />
+            <PostsCard post={post} key={post.title} />
           ))
         }
       </div>

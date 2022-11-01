@@ -60,7 +60,7 @@ module.exports = {
         movedown: {
           '0%': { transform: "translateY(0vh)", height: "100vh" },
           '90%': { transform: "translateY(0vh)", height: "100vh" },
-          '100%': { transform: "translateY(100vh)", height: "0vh" },
+          '100%': { transform: "translateY(100vh)", height: "0vh", visibility: "hidden" },
         },
         blob: {
           "0%": { transform: "scale(1) translate(0px, 0px)" },
