@@ -48,7 +48,7 @@ export const getProjects = () => {
 export const getPosts = () => {
   const postsQuery = gql`
     query {
-      externalBlogpostsCollection {
+      externalBlogpostsCollection(order: date_DESC) {
         items {
           title
           date

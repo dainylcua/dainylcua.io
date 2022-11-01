@@ -31,7 +31,7 @@ export default function ProjectCard(props: Props) {
         <div className="grid grid-rows-4 flex-1">
           <div className="row-span-3 grid grid-rows-6 p-4">
             <h3 className="row-span-1 text-3xl font-bold">
-              Project Name
+              {project.title}
             </h3>
             <p className="row-span-5">
               description
