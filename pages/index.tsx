@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next"
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next"
 import Head from "next/head"
 import Hero from "../components/sections/Hero"
 import Posts from "../components/sections/posts/Posts"
@@ -11,6 +11,7 @@ import Nav from "../components/Nav/Nav"
 import ScrollProgress from "../components/ScrollProgress"
 import { useEffect, useState } from "react"
 import { getExperiences, getProjects, getPosts } from "../utils/ContentfulQueries"
+import { ContentfulProps } from "../types/types"
 
 export const getStaticProps: GetStaticProps = async () => {
   const exps = await getExperiences()
@@ -19,14 +20,13 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      exps,
-      projs,
-      posts
+      exps, projs, posts
     }
   }
 }
 
-const Home: NextPage = (props) => {
+const Home: NextPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const { exps, projs, posts } = props
   const [loading, setLoading] = useState(true) 
 
   useEffect(() => {
@@ -52,9 +52,9 @@ const Home: NextPage = (props) => {
       <ScrollProgress />
       <Hero />
       <AboutMe />
-      <Experience />
-      <Projects />
-      <Posts />
+      <Experience exps={exps} />
+      <Projects projs={projs} />
+      <Posts posts={posts} />
       <Contact />
     </main>
   )

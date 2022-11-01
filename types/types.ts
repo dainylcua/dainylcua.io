@@ -1,14 +1,16 @@
-type ContentfulProps = {
+export type ContentfulProps = {
   exps: Collection,
   posts: Collection,
   projs: Collection
 }
 
-type Collection = { 
-  items: Experience[] | Project[] | Post[]
+export type Collection = { 
+  [collectionName: string]: {
+    items: Experience[] | Project[] | Post[]
+  }
 }
 
-type Experience = {
+export type Experience = {
   company: string,
   duration: string,
   position: string,
@@ -16,7 +18,7 @@ type Experience = {
   skills: string[],
 }
 
-type Project = {
+export type Project = {
   date: string,
   description: string,
   ghUrls: string | null,
@@ -27,7 +29,7 @@ type Project = {
   title: string,
 }
 
-type Post = {
+export type Post = {
   date: string,
   description: string,
   techStack: string | null,
