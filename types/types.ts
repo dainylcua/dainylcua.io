@@ -1,16 +1,16 @@
 export type ContentfulProps = {
-  exps: Collection,
-  posts: Collection,
-  projs: Collection
+  exps: Collection<ExperienceType>,
+  posts: Collection<Post>,
+  projs: Collection<Project>,
 }
 
-export type Collection = { 
+export type Collection<T> = { 
   [collectionName: string]: {
-    items: Experience[] | Project[] | Post[]
+    items: T[]
   }
 }
 
-export type Experience = {
+export type ExperienceType = {
   company: string,
   duration: string,
   position: string,

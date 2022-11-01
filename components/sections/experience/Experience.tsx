@@ -1,14 +1,15 @@
 import LayoutContainer from "../../LayoutContainer"
 import Header2 from "../../Header2"
 import ExperienceCard from "./ExperienceCard"
-import { Collection, Project } from "../../../types/types"
+import { Collection, ExperienceType } from "../../../types/types"
 
 type Props = {
-  exps: Collection
+  exps: Collection<ExperienceType>
 }
 
 export default function Experience(props: Props) {
   const { exps } = props
+  const experiences = exps.experienceCollection.items
   return(
     <LayoutContainer color="bg-stone-800" id="experience">
       <div className="flex w-full justify-center">
@@ -17,8 +18,11 @@ export default function Experience(props: Props) {
       <div className="flex flex-col w-full">
         <div className="flex flex-col">
           {
-            exps.experienceCollection.items.map(() => (
-              <ExperienceCard />
+            experiences.map((experience, index) => (
+              index % 2 ?
+              <ExperienceCard experience={experience} />
+              :
+              <ExperienceCard experience={experience} reverse />
             ))
           }
         </div>

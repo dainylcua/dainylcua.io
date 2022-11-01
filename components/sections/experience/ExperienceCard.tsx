@@ -1,9 +1,13 @@
+import { ExperienceType } from "../../../types/types"
+
 type Props = {
+  experience: ExperienceType,
   reverse?: boolean
 }
 
 export default function ExperienceCard(props: Props) {
-  const { reverse } = props
+  const { experience, reverse } = props
+
   return(
     <div className={`${ reverse ? `lg:items-end lg:self-end lg:text-end` : `` } flex flex-col bg-stone-100 lg:bg-transparent text-stone-900 p-2 w-full lg:w-fit shadow-2xl shadow-stone-900 my-4 rounded-md relative group`}>
       <div className="invisible lg:visible absolute inset-1 bg-gradient-to-br from-orange-500 to-rose-500 rounded-md blur opacity-50 group-hover:opacity-100 transition ease-out duration-500" />
