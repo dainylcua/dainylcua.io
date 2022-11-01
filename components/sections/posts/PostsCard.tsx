@@ -12,6 +12,7 @@ export default function PostsCard(props: Props) {
       rel="noopener noreferrer" 
       target="_blank" 
       className="w-80 h-80 p-4 flex flex-col rounded-md transition-all bg-size-200 bg-stone-100 ease-out duration-400 shadow-md hover:shadow-inner hover:scale-95 hover:shadow-orange-700/25 col-span-1 row-span-1 text-stone-900 relative cursor-pointer"
+      key={post.title}
     >
       <h3 className="text-xl font-bold">
         { post.title }

@@ -19,10 +19,7 @@ export default function Experience(props: Props) {
         <div className="flex flex-col">
           {
             experiences.map((experience, index) => (
-              index % 2 ?
               <ExperienceCard experience={experience} />
-              :
-              <ExperienceCard experience={experience} reverse />
             ))
           }
         </div>

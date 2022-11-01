@@ -17,6 +17,7 @@ export default function ProjectCard(props: Props) {
         target="_blank" 
         rel="noopener noreferrer" 
         className={`${project.inProgress ? `pointer-events-none filter grayscale` : `hover:shadow-lg transition ease-out group-hover:-translate-y-2 hover:shadow-orange-700/25 cursor-pointer duration-400`} flex flex-col rounded-md w-96 h-full bg-stone-100 text-stone-900 shadow-md `}
+        key={project.title}
       >
         <div className="h-[13rem] border-b">
           <Image 

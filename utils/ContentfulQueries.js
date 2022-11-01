@@ -11,7 +11,7 @@ const client = new GraphQLClient(CONTENTFUL_URL, {
 export const getExperiences = async () => {
   const experiencesQuery = gql`
     query {
-      experienceCollection {
+      experienceCollection(order: startDate_DESC) {
         items {
           company
           duration
