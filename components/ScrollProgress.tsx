@@ -16,7 +16,7 @@ export default function ScrollProgress() {
   })
 
   return (
-    <div className="w-full h-1 top-0 z-10 sticky">
+    <div className="w-full h-1 sticky top-0">
       <div className={`bg-gradient-to-br from-orange-700 to-rose-500 h-1`} style={{width: `${scrollPercent}%`}} />
     </div>
   )

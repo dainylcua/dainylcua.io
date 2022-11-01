@@ -1,13 +1,9 @@
 import Header2 from "../../Header2"
 import LayoutContainer from "../../LayoutContainer"
 import ProjectCard from "./ProjectCard"
-import { useEffect } from "react"
+
 
 export default function Projects() {
-  useEffect(() => {
-    const d = document.querySelector('#projects') as HTMLElement
-    console.log(d.offsetTop)
-  }, [])
   return(
     <LayoutContainer id="projects" extended>
       <div className="flex w-full justify-center md:justify-end">

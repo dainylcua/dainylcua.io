@@ -4,10 +4,6 @@ import PostsCard from "./PostsCard"
 import { useEffect } from "react"
 
 export default function Posts() {
-  useEffect(() => {
-    const d = document.querySelector('#posts') as HTMLElement
-    console.log(d.offsetTop)
-  }, [])
   return(
     <LayoutContainer color="bg-stone-800" id="posts">
       <div className="flex w-full justify-center">

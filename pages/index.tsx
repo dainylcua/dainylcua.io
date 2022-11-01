@@ -1,4 +1,4 @@
-import type { NextPage } from "next"
+import type { GetStaticProps, NextPage } from "next"
 import Head from "next/head"
 import Hero from "../components/sections/Hero"
 import Posts from "../components/sections/posts/Posts"
@@ -10,14 +10,31 @@ import Loading from "../components/sections/Loading"
 import Nav from "../components/Nav/Nav"
 import ScrollProgress from "../components/ScrollProgress"
 import { useEffect, useState } from "react"
+import { getExperiences, getProjects, getPosts } from "../utils/ContentfulQueries"
 
-const Home: NextPage = () => {
-  const [loading, setLoading] = useState(true)
+export const getStaticProps: GetStaticProps = async () => {
+  const exps = await getExperiences()
+  const projs = await getProjects()
+  const posts = await getPosts()
+
+  return {
+    props: {
+      exps,
+      projs,
+      posts
+    }
+  }
+}
+
+const Home: NextPage = (props) => {
+  const [loading, setLoading] = useState(true) 
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
     }, 3850)
   }, [])
+
   return (
     <main className="w-full h-full min-h-screen leading-relaxed bg-stone-900 text-stone-300 selection:bg-orange-700 selection:text-orange-200 text-lg scroll-smooth relative">
       <Head>

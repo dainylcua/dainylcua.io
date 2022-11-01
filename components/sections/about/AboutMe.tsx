@@ -5,14 +5,9 @@ import profilePic from "../../../public/rsz_professional-2.png"
 import ExtLink from "../../ExtLink"
 import AboutSection from "./AboutSection"
 import SkillsSection from "./SkillsSection"
-import { useEffect } from "react"
 
 
 export default function AboutMe() {
-  useEffect(() => {
-    const d = document.querySelector('#about') as HTMLElement
-    console.log(d.offsetTop)
-  }, [])
   return(
     <LayoutContainer id="about">
       <div className="flex justify-center md:justify-start">

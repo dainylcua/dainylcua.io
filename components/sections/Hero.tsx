@@ -1,13 +1,8 @@
 import { IconContext } from "react-icons";
 import { SiGithub, SiLinkedin, SiLeetcode, SiCodewars, SiTwilio } from "react-icons/si";
 import { TfiArrowCircleDown } from "react-icons/tfi"
-import { useEffect } from "react";
 
 export default function Hero({}) {
-  useEffect(() => {
-    const d = document.querySelector('#hero') as HTMLElement
-    console.log(d.offsetTop)
-  }, [])
   return(
     <div className="bg-stone-800">
       <header id="hero" className="flex flex-col lg:items-center py-8 lg:py-16 text-xl w-full lg:h-[94vh] text-center relative overflow-hidden">
