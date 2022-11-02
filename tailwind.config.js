@@ -58,9 +58,9 @@ module.exports = {
           '100%' : { opacity: 1, transform: 'translateY(0px)' },
         },
         movedown: {
-          '0%': { transform: "translateY(0vh)", height: "100vh", opacity:"100" },
-          '90%': { transform: "translateY(0vh)", height: "100vh", opacity: "100"},
-          '100%': { transform: "translateY(100vh)", height: "0vh", opacity: "0" },
+          '0%': { transform: "translateY(0vh)", height: "100vh", visibility: "visible" },
+          '90%': { transform: "translateY(0vh)", height: "100vh",},
+          '100%': { transform: "translateY(100vh)", height: "0%", visibility: "invisible"},
         },
         blob: {
           "0%": { transform: "scale(1) translate(0px, 0px)" },
