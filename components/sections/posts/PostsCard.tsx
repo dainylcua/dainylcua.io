@@ -1,4 +1,8 @@
 import { Post } from "../../../types/types"
+import { skills } from "../../../utils/IconToSkill"
+import { SiJavascript, SiNodedotjs, SiTwilio, SiRust, SiOpenapiinitiative, SiReact, SiExpress } from "react-icons/si"
+import { IconContext } from "react-icons/lib"
+import React from "react"
 
 type Props = {
   post: Post
@@ -22,13 +26,24 @@ export default function PostsCard(props: Props) {
       <p>
         { post.description }
       </p>
-      <div className="absolute bottom-2 right-2">
-        {
-        post.techStack ? 
-          `Tech Stack available`
-        :
-          ``
-        }
+      <div className="absolute bottom-2 right-2 flex gap-x-1">
+        <IconContext.Provider 
+          value={{ 
+          size: "1.5em", 
+          className: "w-fit opacity-60"
+          }}
+        >
+          {
+          post.techStack ? 
+            post.techStack.map((tech) => (
+              React.createElement(
+                skills[tech.toLowerCase().replace(/\s/g,'')]
+              )
+            ))
+          :
+            ``
+          }
+        </IconContext.Provider>
       </div>
     </a>
   )

@@ -1,4 +1,7 @@
 import { ExperienceType } from "../../../types/types"
+import { IconContext } from "react-icons/lib"
+import { skills } from "../../../utils/IconToSkill"
+import React from "react"
 
 type Props = {
   experience: ExperienceType,
@@ -28,15 +31,36 @@ export default function ExperienceCard(props: Props) {
           }
         </ul>
       </div>
-      <div className="lg:-right-0 lg:top-4 lg:absolute bg-gradient-to-br from-orange-500 to-rose-500 px-6 py-2  shadow-xl shadow-orange-900/50 lg:w-80 flex rounded-md relative">
+      <div className="lg:-right-0 lg:top-4 lg:absolute bg-gradient-to-br from-orange-500 to-rose-500 px-6 py-2  shadow-xl shadow-orange-900/50 lg:w-fit flex rounded-md relative">
         <div className="invisible lg:visible absolute inset-1 bg-gradient-to-br from-orange-500 to-rose-500 rounded-md blur opacity-50 group-hover:opacity-100 transition ease-out duration-500" />
-        <div className=" flex flex-col relative">
-          <div>
-            Icon
-          </div>
-          <p>
-            Skill name 
-          </p>
+        <div className="flex flex-row relative w-full justify-evenly">
+          <IconContext.Provider 
+            value={{ 
+            size: "1.5em", 
+            className: "w-fit"
+            }}
+          >
+            {
+              experience.skills.map((skill) => (
+                <div 
+                  className={`flex flex-col relative mx-1 items-center text-center w-fit`}
+                  key={`${experience.company}-${skill}`}
+                >
+                    {
+                      skills[skill.toLowerCase().replace(/\s/g,'')] ?
+                      React.createElement(
+                        skills[skill.toLowerCase().replace(/\s/g,'')]
+                      )
+                        :
+                        ``
+                      }
+                  <p className="text-sm">
+                    {skill}
+                  </p>
+                </div>
+              ))
+            }
+          </IconContext.Provider>
         </div>
       </div>
     </div>

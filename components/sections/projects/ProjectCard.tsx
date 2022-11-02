@@ -1,6 +1,5 @@
 import Image from "next/image"
-import mountain from "../../../public/mountains.png"
-import { SiGithub, SiBootstrap, SiBulma, SiContentful, SiDjango, SiExpress, SiFirebase, SiGraphql, SiHeroku, SiJavascript, SiJquery, SiMongodb, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiTailwindcss } from "react-icons/si"
+import { SiGithub } from "react-icons/si"
 import { IconContext } from "react-icons"
 import { Project } from "../../../types/types"
 import { skills } from "../../../utils/IconToSkill"

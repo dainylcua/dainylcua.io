@@ -34,7 +34,7 @@ export type Project = {
 export type Post = {
   date: string,
   description: string,
-  techStack: string | null,
+  techStack: string[] | null,
   title: string,
   url: string,
 }
