@@ -1,8 +1,7 @@
 import { IconContext } from "react-icons";
 import { SiGithub, SiLinkedin, SiLeetcode, SiCodewars, SiTwilio } from "react-icons/si";
-import { TfiArrowCircleDown } from "react-icons/tfi"
 
-export default function Hero({}) {
+export default function Hero() {
   return(
     <div className="bg-stone-800">
       <header id="hero" className="flex flex-col lg:items-center py-8 lg:py-16 text-xl w-full lg:h-[94vh] text-center relative overflow-hidden">

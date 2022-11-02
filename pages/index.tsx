@@ -6,6 +6,7 @@ import AboutMe from "../components/sections/about/AboutMe"
 import Projects from "../components/sections/projects/Projects"
 import Experience from "../components/sections/experience/Experience"
 import Loading from "../components/sections/Loading"
+import Footer from "../components/sections/footer/Footer"
 import Nav from "../components/Nav/Nav"
 import ScrollProgress from "../components/ScrollProgress"
 import { useEffect, useState } from "react"
@@ -53,6 +54,7 @@ const Home: NextPage = (props: InferGetStaticPropsType<typeof getStaticProps>) =
       <Experience exps={exps} />
       <Projects projs={projs} />
       <Posts posts={posts} />
+      <Footer />
     </main>
   )
 }
