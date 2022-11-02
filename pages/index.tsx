@@ -5,13 +5,11 @@ import Posts from "../components/sections/posts/Posts"
 import AboutMe from "../components/sections/about/AboutMe"
 import Projects from "../components/sections/projects/Projects"
 import Experience from "../components/sections/experience/Experience"
-import Contact from "../components/sections/contacts/Contact"
 import Loading from "../components/sections/Loading"
 import Nav from "../components/Nav/Nav"
 import ScrollProgress from "../components/ScrollProgress"
 import { useEffect, useState } from "react"
 import { getExperiences, getProjects, getPosts } from "../utils/ContentfulQueries"
-import { ContentfulProps } from "../types/types"
 
 export const getStaticProps: GetStaticProps = async () => {
   const exps = await getExperiences()
@@ -55,7 +53,6 @@ const Home: NextPage = (props: InferGetStaticPropsType<typeof getStaticProps>) =
       <Experience exps={exps} />
       <Projects projs={projs} />
       <Posts posts={posts} />
-      <Contact />
     </main>
   )
 }

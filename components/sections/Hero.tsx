@@ -28,7 +28,7 @@ export default function Hero({}) {
             Focused on creating applications with a purpose and content that educates while positively impacting the world with my coding skills.
           </p>
           <div className="w-60 pb-8">
-            <IconContext.Provider value={{ className: "text-orange-300 hover:text-rose-300 cursor-pointer transition ease-in-out", size: "1.5em"}}>
+            <IconContext.Provider value={{ className: "text-orange-300 hover:text-rose-500 cursor-pointer transition ease-in-out", size: "1.5em"}}>
               <div className="w-full flex justify-between">
                 <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/dainylcua/">
                   <SiLinkedin />
@@ -51,7 +51,7 @@ export default function Hero({}) {
         </div>
         <a
           href="mailto:dainylcuainquiries@gmail.com?subject=Mail from Personal Website&body=Hello, this is [your name here].%0d%0aI saw your website and would love to chat! You can find me on LinkedIn at linkedin.com/in/[your linkedin here].%0d%0a%0d%0aThank you." 
-          className="bg-gradient-to-br from-orange-500 via-rose-500 to-orange-500 px-10 py-6 text-center w-fit self-center shadow-orange-900/50 flex rounded-md bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 text-2xl font-bold hover:shadow-xl ease-out text-stone-50 hover:scale-95"
+          className="bg-gradient-to-br from-orange-500 via-rose-500 to-orange-500 px-10 py-6 text-center w-fit self-center shadow-orange-900/50 flex rounded-md bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 text-2xl font-bold hover:shadow-xl ease-out text-stone-50 hover:scale-95 z-10"
         >
           Contact Me
         </a>

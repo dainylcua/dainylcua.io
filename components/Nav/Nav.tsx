@@ -26,9 +26,6 @@ export default function Nav() {
           <NavLink href="#posts">
             blogposts
           </NavLink>
-          <NavLink href="#contact">
-            contact
-          </NavLink>
           <NavLink href="https://github.com/dainylcua/dc-resume/raw/main/Dainyl%20Cua%20-%20Tech%20Resume.pdf">
             resume
           </NavLink>
@@ -66,9 +63,6 @@ export default function Nav() {
           </NavLink>
           <NavLink href="#posts">
             posts
-          </NavLink>
-          <NavLink href="#contact">
-            contact
           </NavLink>
           <NavLink href="https://github.com/dainylcua/dc-resume/raw/main/Dainyl%20Cua%20-%20Tech%20Resume.pdf">
             resume

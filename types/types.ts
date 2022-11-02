@@ -21,10 +21,12 @@ export type ExperienceType = {
 export type Project = {
   date: string,
   description: string,
-  ghUrls: string | null,
+  ghUrls: string []| null,
   inProgress: boolean,
   liveUrl: string,
-  picture: string,
+  picture: {
+    url: "string"
+  },
   techStack: string[],
   title: string,
 }
