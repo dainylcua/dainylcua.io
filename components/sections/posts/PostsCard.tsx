@@ -36,9 +36,13 @@ export default function PostsCard(props: Props) {
           {
           post.techStack ? 
             post.techStack.map((tech) => (
-              React.createElement(
-                skills[tech.toLowerCase().replace(/\s/g,'')]
-              )
+              <div key={`${post.title}-${tech}`}>
+                {
+                  React.createElement(
+                    skills[tech.toLowerCase().replace(/\s/g,'')]
+                  )
+                }
+              </div>
             ))
           :
             ``

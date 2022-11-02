@@ -38,7 +38,7 @@ export default function ProjectCard(props: Props) {
               {project.description}
             </p>
           </div>
-          <div className="row-span-1 auto-rows-max bg-gradient-to-br text-stone-900 from-orange-500 to-rose-500 rounded-b-md p-2 flex flex-row w-max-full overflow-x-auto items-center">
+          <div className="row-span-1 auto-rows-max bg-gradient-to-br text-stone-900 from-orange-500 to-rose-500 rounded-b-md p-2 flex flex-row w-max-full overflow-x-auto items-center justify-evenly">
             <IconContext.Provider 
               value={{ 
               size: "1.5em", 
@@ -72,25 +72,26 @@ export default function ProjectCard(props: Props) {
       {
         project.ghUrls !== null ?
           <div className="absolute top-2 left-2 flex flex-row">
+            <IconContext.Provider 
+              value={{ 
+                size: "2em", 
+                className: `${project.inProgress ? `disabled filter grayscale` : `text-orange-300 hover:text-rose-500 group-hover:-translate-y-2 transition ease-out duration-400 drop-shadow-2xl filter`} mr-2` }}
+            >
             {
               project.ghUrls.map((url) => (
-                <IconContext.Provider 
-                  value={{ 
-                    size: "2em", 
-                    className: `${project.inProgress ? `disabled filter grayscale` : `text-orange-300 hover:text-rose-500 group-hover:-translate-y-2 transition ease-out duration-400 drop-shadow-2xl filter`} mr-2` }}
-                >
-                  <a
-                    key={url} 
-                    href={url}
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={`${project.inProgress ? `pointer-events-none` : ``}`}
-                  >
-                    <SiGithub />
-                  </a>
-                </IconContext.Provider>
+                <div key={url}>
+                    <a
+                      href={url}
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className={`${project.inProgress ? `pointer-events-none` : ``}`}
+                    >
+                      <SiGithub />
+                    </a>
+                </div>
               ))
             }
+            </IconContext.Provider>
           </div>
           :
           ``

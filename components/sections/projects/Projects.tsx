@@ -16,7 +16,7 @@ export default function Projects(props: Props) {
       <div className="flex w-full justify-center md:justify-end">
         <Header2>Projects</Header2>
       </div>
-      <div className="grid md:grid-flow-col grid-flow-row gap-y-8 w-fit md:px-0 p-4 md:w-full shadow-[inset_0_-2px_30px_rgba(0,0,0,0.53)] bg-stone-700 rounded-xl relative overflow-hidden md:overflow-x-auto h-[80vh] md:h-fit overflow-y-auto md:mx-0 mx-auto">
+      <div className="grid grid-flow-col gap-y-8 md:px-0 p-2 md:p-4 w-full shadow-[inset_0_-2px_30px_rgba(0,0,0,0.53)] bg-stone-700 rounded-xl relative overflow-x-auto h-fit md:mx-0 mx-auto">
         {
           projects.map((project) => (
             <ProjectCard project={project} key={project.title} />

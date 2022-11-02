@@ -16,7 +16,7 @@ export default function AboutMe() {
         </Header2>
       </div>
       <div className="flex items-center">
-        <div className="mr-16 flex flex-col">
+        <div className="lg:mr-16 flex flex-col">
           <AboutSection header="Hello!">
             Hi! I am Dainyl Cua, and I am a software engineer that creates full-stack applications with a purpose. I also dabble in <ExtLink href="https://dc-blog-omega.vercel.app/blogposts">writing technical content aimed at developers</ExtLink> in case that's your fancy. My end goal is to get into a position where I can help underrepresented communities get into tech. I hope I can help you learn a thing or two!
           </AboutSection>
