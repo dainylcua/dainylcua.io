@@ -31,7 +31,7 @@ const Home: NextPage = (props: InferGetStaticPropsType<typeof getStaticProps>) =
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3850)
+    }, 4000)
   }, [])
 
   return (

@@ -26,7 +26,10 @@ export default function Nav() {
           <NavLink href="#posts">
             blogposts
           </NavLink>
-          <NavLink href="https://github.com/dainylcua/dc-resume/raw/main/Dainyl%20Cua%20-%20Tech%20Resume.pdf">
+          <NavLink 
+            href="https://github.com/dainylcua/dc-resume/raw/main/Dainyl%20Cua%20-%20Tech%20Resume.pdf"
+            external
+          >
             resume
           </NavLink>
         </div>
