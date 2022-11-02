@@ -18,10 +18,10 @@ export default function AboutMe() {
       <div className="flex items-center">
         <div className="lg:mr-16 flex flex-col">
           <AboutSection header="Hello!">
-            Hi! I am Dainyl Cua, and I am a software engineer that creates full-stack applications with a purpose. I also dabble in <ExtLink href="https://dc-blog-omega.vercel.app/blogposts">writing technical content aimed at developers</ExtLink> in case that's your fancy. My end goal is to get into a position where I can help underrepresented communities get into tech. I hope I can help you learn a thing or two!
+            Hi! I am Dainyl Cua, and I am a software engineer that creates full-stack applications with a purpose. I also dabble in <ExtLink href="https://dc-blog-omega.vercel.app/blogposts">writing technical content aimed at developers</ExtLink> in case that&apos;s your fancy. My end goal is to get into a position where I can help underrepresented communities get into tech. I hope I can help you learn a thing or two!
           </AboutSection>
           <AboutSection header="College">
-            I graduated from Texas A&M University in 2020 with a <ExtLink href="https://github.com/dainylcua/dc-resume/raw/main/Diploma.pdf">Bachelor's of Science in Chemical Engineering</ExtLink>. I worked at an environmental consulting agency for 9 months, lost my job during COVID, and started my journey into tech.
+            I graduated from Texas A&M University in 2020 with a <ExtLink href="https://github.com/dainylcua/dc-resume/raw/main/Diploma.pdf">Bachelor&apos;s of Science in Chemical Engineering</ExtLink>. I worked at an environmental consulting agency for 9 months, lost my job during COVID, and started my journey into tech.
           </AboutSection>
           <AboutSection header="Bootcamp">
             After learning the fundamentals of web devlopment, I studied Software Engineering at <ExtLink href="https://generalassemb.ly/">General Assembly&apos;s</ExtLink> coding bootcamp, then developed a prototype Jamstack EdTech website under <ExtLink href="https://danieljs.io/">my bootcamp instructor</ExtLink>, and worked as a <ExtLink href="https://www.twilio.com/blog/introducing-developer-voices-intern-dainyl-cua">Software Engineer for Technical Content</ExtLink> at Twilio, the industry leader for cloud communications.
